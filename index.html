@@ -77,7 +77,8 @@
     <div id="mision" class="section">
         <h2>Aplicar Tecnologías de la información teniendo en cuenta las necesidades en la unidad administrativa</h2>
         <div class="section-content tabla2" style="overflow: scroll; width: 900px; ">
-            <table border="1" id="tablaExcel"></table>
+           <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ8W5PyPzx59GjEdN8OutzwxxHzeDAZ1C3ExCVSAo1UGYWbJQ9wVRBV_cPMYl75Nq5w4lOqNCbVorO/pubhtml?widget=true&amp;headers=false" style="width: 900px; height: 600px;"></iframe>
+        </div>
         </div>
         
         <div class="section-text section-text2">
@@ -88,27 +89,7 @@
         <p>&copy; 2025 DELICIOUS FOOD JR S.A.S. Todos los derechos reservados.</p>
       </footer>
     
-    <script>
-        // Ruta del archivo Excel en el servidor
-        const filePath1 = "Trabajo_excel.xlsx";  // Cambia esto con la ubicación real del archivo
-
-        // Función para cargar y mostrar el archivo Excel
-        async function cargarExcel() {
-            let response = await fetch(filePath1);
-            let data = await response.arrayBuffer();
-            let workbook = XLSX.read(data, { type: "array" });
-
-            let sheetName = workbook.SheetNames[0]; // Tomar la primera hoja
-            let sheet = workbook.Sheets[sheetName];
-
-            let htmlTable = XLSX.utils.sheet_to_html(sheet);
-            document.getElementById("tablaExcel").innerHTML = htmlTable;
-            
-        }
-
-        // Llamar la función al cargar la página
-        cargarExcel();
-    </script>
+   
     <script>
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('nav-menu');
