@@ -372,10 +372,11 @@ footer{
     }
     .section-text2{
         height: 400px;
-        margin-left: 800px;
+        margin-left: 900px;
         margin-top: -400px;
         align-items: center;
         justify-content: center;
+        text-align: right;
     }
     .video-container{
         display: none;
