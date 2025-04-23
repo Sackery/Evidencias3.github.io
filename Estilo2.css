@@ -26,6 +26,7 @@ a{
     text-transform: capitalize;
 }
 .parrafo1{
+    text-align: right;
     text-transform: capitalize;
     font-size: 24pt;
 }
